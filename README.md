@@ -10,11 +10,6 @@ More details can be found at https://github.com/awhitehatter/mailoney
 
 <b>git clone https://github.com/awhitehatter/mailoney.git</b>
 
-Go ahead and create the log file in Mailoney:<br>
-<b>mkdir mailoney/logs</b></br>
-<b>touch mailoney/logs/commands.log</b>
-
-
 Add the Dockerfile for Mailoney-Docker and run:
 
 <b>docker build --rm -t mailoney .</b><br>
@@ -27,3 +22,7 @@ You can set up iptables:<br>
 <b>sudo iptables -t nat -A PREROUTING -p tcp --dport 25 -j REDIRECT --to-port 2525</b>
 
 Now you can connect to port 25.
+
+View logs with:<br>
+<b>docker exec -it CONTAINER_ID sh -c 'cat /root/mailoney/logs/mail.log'</b>
+<b>docker exec -it CONTAINER_ID sh -c 'cat /root/mailoney/logs/commands.log'</b>
