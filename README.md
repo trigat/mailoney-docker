@@ -2,7 +2,7 @@
 Docker container for Mailoney SMTP Honeypot
 
 # Overview
-This image sets up Mailoney in an Ubuntu container.
+This image sets up the Mailoney honeypot in an Ubuntu Docker container.
 
 More details can be found at https://github.com/awhitehatter/mailoney
 
