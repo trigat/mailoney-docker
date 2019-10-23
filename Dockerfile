@@ -10,4 +10,4 @@ RUN pip install hpfeeds
 
 COPY ./mailoney /root/mailoney
 
-ENTRYPOINT cd /root/mailoney && python mailoney.py -i localhost -p 2525 -s "Infrastructure Mail Server" -t schizo_open_relay </dev/null &>/dev/null & /bin/bash
+ENTRYPOINT cd /root/mailoney && python mailoney.py -i 172.18.0.2 -p 2525 -s "Infrastructure Mail Server" -t schizo_open_relay </dev/null &>/dev/null & /bin/bash
