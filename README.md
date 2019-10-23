@@ -24,5 +24,5 @@ You can set up iptables:<br>
 Now you can connect to port 25.
 
 View logs with:<br>
-<b>docker exec -it CONTAINER_ID sh -c 'cat /root/mailoney/logs/mail.log'</b>
+<b>docker exec -it CONTAINER_ID sh -c 'cat /root/mailoney/logs/mail.log'</b><br>
 <b>docker exec -it CONTAINER_ID sh -c 'cat /root/mailoney/logs/commands.log'</b>
