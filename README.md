@@ -10,6 +10,11 @@ More details can be found at https://github.com/awhitehatter/mailoney
 
 <b>git clone https://github.com/awhitehatter/mailoney.git</b>
 
+Go ahead and create the log file in Mailoney:<br>
+<b>mkdir mailoney/logs</b></br>
+<b>touch mailoney/logs/commands.log</b>
+
+
 Add the Dockerfile for Mailoney-Docker and run:
 
 <b>docker build --rm -t mailoney .</b><br>
